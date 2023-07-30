@@ -104,9 +104,14 @@ p {
 .summary-container .scores-list{
     display: grid;
     margin: 1.250rem 2.800rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 3rem;
+}
+
+.summary-container .scores-list .summary-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .summary-container .scores-list .summary-item-score {
@@ -174,8 +179,6 @@ p {
         border-top-left-radius: 2rem 2rem;
         border-top-right-radius: 2rem 2rem;
         height: 100%;
-        padding: 0rem 5.250rem;
-        padding-bottom: 2.500rem;
     }
 
     .summary-container button {
