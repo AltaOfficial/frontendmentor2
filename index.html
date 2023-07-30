@@ -7,41 +7,46 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+  <div class="top-container">
+    <div class="result-container">
+      <p class="result-title">Your Result</p>
+      <div class="score-container">
+        <p class="score-big">76</p>
+        <p class="score-small">of 100</p>
+      </div>
+      <p class="result-great">Great</p>
+      <p class="result-comparison-text">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
   
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="summary-container">
+      <p class="summary-title">Summary</p>
+      <div class="scores-list">
+        <div class="summary-item-title">
+          <img src="./assets/images/icon-reaction.svg" type="image/svg" alt="icon-reaction">
+          <p class="reaction-text">Reaction</p>
+        </div>
+        <p class="summary-item-score" id="reaction-score">80 <span>/ 100</span></p>
+        <div class="summary-item-title">
+          <img src="./assets/images/icon-memory.svg" type="image/svg" alt="icon-memory">
+          <p class="memory-text">Memory</p>
+        </div>
+        <p class="summary-item-score" id="memory-score">92 <span>/ 100</span></p>
+        <div class="summary-item-title">
+          <img src="./assets/images/icon-verbal.svg" type="image/svg" alt="icon-verbal">
+          <p class="verbal-text">Verbal</p>
+        </div>
+        <p class="summary-item-score" id="verbal-score">61 <span>/ 100</span></p>
+        <div class="summary-item-title">
+          <img src="./assets/images/icon-visual.svg" type="image/svg" alt="icon-visual">
+          <p class="visual-text">Visual</p>
+        </div>
+        <p class="summary-item-score" id="visual-score">72 <span>/ 100</span></p>
+      </div>
+      <button class="continue-cta">Continue</button>
+    </div>
   </div>
 </body>
 </html>

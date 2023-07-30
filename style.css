@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
+    --Violetblue: hsla(256, 72%, 46%, 1);
+    --Persianblue: hsla(241, 72%, 46%, 0);
+}
+
+body {
+    font-family: 'Hanken Grotesk', 'sans-serif';
+}
+
+p {
+    font-size: 18px;
+}
+
+.result-container {
+   background-image: linear-gradient(var(--Lightslateblue), var(--Lightroyalblue));
+   text-align: center;
+   padding: 0rem 3.250rem;
+   padding-bottom: 2.500rem;
+   border-bottom-left-radius: 2rem 2rem;
+   border-bottom-right-radius: 2rem 2rem;
+}
+
+.result-container .result-title {
+    color: var(--Lightlavender);
+    padding-top: 1.250rem;
+    margin: 0rem 0rem 1.250rem 0rem;
+}
+
+.result-container .result-comparison-text {
+    color: var(--Lightlavender);
+    font-size: 0.950rem;
+}
+
+.result-container .score-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.250), hsla(241, 81%, 54%, 0.100));
+    border-radius: 50%;
+    width: 11rem;
+    height: 11rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-container .score-container .score-big {
+    color: white;
+    font-size: 3.500rem;
+    font-weight: 700;
+}
+
+.result-container .score-container .score-small {
+    color: var(--Lightlavender);
+}
+
+.result-container .result-great {
+    color: white;
+    margin: 1.250rem 0rem;
+    font-size: 1.650rem;
+    font-weight: 700;
+}
+
+.summary-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-container button {
+    border-style: none;
+    padding: 1.250rem 5.500rem;
+    border-radius: 2rem;
+    align-self: center;
+    font-family: inherit;
+    width: 90%;
+    font-size: 1.100rem;
+    margin: 1.500rem 0rem;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.summary-container button:hover{
+    cursor: pointer;
+    background-color: hsl(225, 19%, 33%);
+}
+
+.summary-container .summary-title {
+    margin: 1.750rem 0rem 1.250rem 2rem;
+    font-weight: 700;
+    color: var(--Darkgrayblue);
+}
+
+.summary-container .scores-list{
+    display: grid;
+    margin: 1.250rem 2.800rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.summary-container .scores-list .summary-item-score {
+    margin-left: auto;
+    font-weight: 700;
+}
+
+.summary-container .scores-list .summary-item-score span{
+    color: grey;
+}
+
+.summary-container .scores-list .summary-item-title {
+    display: flex;
+}
+
+.summary-container .scores-list .summary-item-title img{
+    margin-right: 0.500rem;
+}
+
+.summary-container .scores-list .reaction-text {
+    color: #F55;
+}
+
+.summary-container .scores-list .memory-text {
+    color: #FFB21E;
+}
+
+.summary-container .scores-list .verbal-text {
+    color: #00BB8F;
+}
+
+.summary-container .scores-list .visual-text {
+    color: #1125D6;
+}
+    
+
+.summary-container button {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+}
+
+@media (min-width: 1440px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh);
+    }
+
+    .top-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 45%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1rem 2rem 9rem 0.500rem rgba(0, 0, 0, .2);
+        border-top-left-radius: 2rem 2rem;
+        border-top-right-radius: 2rem 2rem;
+        border-bottom-left-radius: 2rem 2rem;
+        border-bottom-right-radius: 2rem 2rem;
+    }
+
+    .result-container {
+        border-top-left-radius: 2rem 2rem;
+        border-top-right-radius: 2rem 2rem;
+        height: 100%;
+        padding: 0rem 5.250rem;
+        padding-bottom: 2.500rem;
+    }
+
+    .summary-container button {
+        padding: 0.9rem 5.5rem;
+        width: 80%;
+    }
+
+    .summary-container .summary-title {
+        font-size: 1.250rem;
+    }
+}

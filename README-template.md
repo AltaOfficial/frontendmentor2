@@ -91,8 +91,10 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [resource 1](https://www.freecodecamp.org/news/use-svg-images-in-css-html/) - Needed a refresher on how to link to an svg.
+- [resource 2](https://www.w3schools.com/css/css3_gradients.asp) - Needed a reminder on how to use gradients.
+- [resource 3](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) - Needed a recap on using border-radius.
+- [resource 4](https://www.w3schools.com/css/css_align.asp) - Looked how to center items.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
